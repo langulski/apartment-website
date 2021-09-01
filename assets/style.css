@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+
+
+
 * {
 margin:0px;
 padding:0px;
@@ -17,6 +22,47 @@ article{
 
 }
 
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+header{
+box-shadow: 0px 2px 10px rgb(0 0 0 / 20%);
+top:0;
+left:0;
+z-index:9;
+width:100%;
+font-family: "Montserrat";
+
+}
+
+
+header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+header .head_style{
+    display:flex;
+    align-items: center;
+}
+
+header  .head_style h1{
+    font-size : 50px;
+    margin:10px;
+
+}
+
+header .head_style h2 {
+font-weight:normal;
+font-size:18px;
+
+}
 .info_flex{
     display:flex;
     justify-content: space-between;
@@ -25,26 +71,26 @@ article{
 }
 
 section.banner .slider{
-    width: 100%;
+    width: 95%;
     height: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 90%);
+   
+
 }
 
 section.banner .controllers{
-    width:100%;
-    height:50%;
     position: absolute;
     z-index: 1;
-
-}
-section.banner .controllers img{
-    width:2%;
+    width: 90%;
+    height: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -55,14 +101,17 @@ section.banner .container {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    padding:30px
+
+
 }
 
 section.products .container{
     display:flex;
     justify-content: space-between; 
      align-items: flex-start;
-    flex-wrap:  row;
-    padding: px 0;
+    flex-wrap:  wrap;
+    padding: px 50px 0;
 }
 
 
@@ -73,8 +122,8 @@ section.products article{
 width:500px;
 max-width:100%;
 margin:30px;
-box-shadow: 0px 2px 10px rgb(0 0 0 / 25%);
-background-color: rgba(243, 243, 243, 0.795);
+box-shadow: 0px 2px 10px rgb(0 0 0 / 50%);
+background-color: rgba(238, 237, 237, 0.911);
 }
 
 section.products article .show_p {
@@ -83,6 +132,11 @@ section.products article .show_p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+section.products article p{
+    color: rgb(95, 95, 95);
+    font-family: 'Ropa Sans', sans-serif;
 }
 
 section.products article .info{
@@ -104,20 +158,130 @@ background-repeat: no-repeat;
 
 }
 
+section.products article .info .btn {
+display:inline-block;
+font-size: 25px;
+border-radius: 20px;
+padding:3px 10px;
+color: rgb(236, 236, 236);
+} 
+
+section.products article .info .btn.btn-green{
+    background-color: rgb(10, 196, 4);
+}
+
+section.products article .info .btn.btn-orange{
+    background-color: rgb(235, 165, 15);
+}
+
+section.products article h3{
+  
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif; 
+    margin: 0;
+    text-align: center;
+    color: rgb(128, 126, 126);
+    font-size: 30px;
+    
+}
+
+
+section.types article {
+
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+    margin:30px;
+    width:95%;
+    height:150px;
+    border-radius: 4px;
+    position:relative;
+    box-shadow: inset 0 0 2000px rgb(97, 97, 97);
+
+
+
+}
+
+section.types h2{
+    margin:15px 15px;
+text-align: center;
+color: rgb(128, 126, 126);
+
+}
+
+section.types article h3{
+display:flex;
+color: #ffffff;
+align-items: center;
+justify-content: center;
+position:relative;
+width:100%;
+height:100%;
+top:0;
+left:0;
+text-shadow: 2px 2px 3px black;
+}
+
+
+footer{
+    background-color: #333333;
+    font-family: 'fantasy', sans-serif;
+}
+footer .container{
+    justify-content: space-between; 
+    display:flex;
+    width:100%;
+}
+
+footer .google{
+   
+    display:flex;
+    padding:40px 48px;
+    width:400px;
+}
+
+footer .info_f{
+    align-items: center;
+    color:rgb(255, 255, 255);
+ 
+ 
+}
+#parent {
+    text-align: justify;
+    font-size: 20px; /* IE 9/10 fix */
+    padding:20px;
+    
+  }
+  #parent li {
+    display: flex;
+    padding: 20px 40px;
+  }
+  #parent:after {
+    content: '';
+
+  }
+
 
 @media only screen and (min-width: 992px) {
 
-    .loft_products {
+    .products {
   
-      flex: 1 1 calc(50% - 38px);
+      flex: 1 0 calc(50% - 38px);
+
     }
   }
 
   @media only screen and (min-width: 768px) {
 
-    .loft_products {
+    .products {
 
-      flex: 1 1 calc(50% - 32px);
+      flex: 1 0 calc(50% - 32px);
     }
   }
   
