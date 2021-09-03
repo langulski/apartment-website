@@ -134,6 +134,18 @@ section.products article .show_p {
     background-repeat: no-repeat;
 }
 
+section.products .container .show_p:hover{
+    box-shadow: 3px 2px 10px rgb(0 0 0 / 90%);
+    transition: 2s ease;
+    transform: scale(1.02);
+    }
+
+    section.products .container .btn:hover{
+        transform: scale(1.10);
+        transition: 1.5s ease;
+    }
+
+
 section.products article p{
     color: rgb(95, 95, 95);
     font-family: 'Ropa Sans', sans-serif;
@@ -157,6 +169,9 @@ margin:16px;
 background-repeat: no-repeat;
 
 }
+
+
+
 
 section.products article .info .btn {
 display:inline-block;
@@ -204,9 +219,14 @@ section.types article {
     position:relative;
     box-shadow: inset 0 0 2000px rgb(97, 97, 97);
 
-
-
 }
+
+section.types article:hover {
+transform: scale(1.05) ;
+transition: all 2s ease;
+box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0);
+}
+
 
 section.types h2{
     margin:15px 15px;
@@ -214,6 +234,14 @@ text-align: center;
 color: rgb(128, 126, 126);
 
 }
+
+section.types h2:hover {
+
+	color: #585858;
+    transition: 2s;
+    text-shadow: 1px 0px 1px rgb(68, 68, 68);
+}
+
 
 section.types article h3{
 display:flex;
